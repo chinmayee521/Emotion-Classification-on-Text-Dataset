@@ -20,4 +20,4 @@ Programming languages- Python, HTML, CSS
 
 Python Libraries-Sklearn library, Pandas, Matplotlib, Numpy, nltk
 
-Screenshot of localhost link -> 
+Screenshot of localhost link -> https://github.com/chinmayee521/Emotion-Classification-on-Text-Dataset/blob/master/DMW_Screenshot.png
