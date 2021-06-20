@@ -19,3 +19,5 @@ Framework used for frontend- Django
 Programming languages- Python, HTML, CSS
 
 Python Libraries-Sklearn library, Pandas, Matplotlib, Numpy, nltk
+
+Screenshot of localhost link -> 
