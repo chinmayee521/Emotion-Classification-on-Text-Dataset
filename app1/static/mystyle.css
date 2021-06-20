@@ -1,0 +1,139 @@
+
+.heading {
+    float: left;
+    background-color: rgb(0, 0, 0) ;
+    padding: 10px ;    
+    margin-top: 20px;
+    margin-left: 0px;
+    color: seashell;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    width: 100%;
+       
+  }
+  fieldset{
+    width: 30%;
+    border:2px solid rgb(202, 202, 202);
+    border-radius: 10px;    
+    margin-top: 50px;
+    margin-bottom: 0px;
+    
+    
+  
+  
+  }
+  table,tr {
+    width: 50%;
+    border-collapse: collapse;
+  }
+  .proj {
+    background-color: rgb(221, 221, 221) ;
+    padding: 30px ;    
+    margin-top: 60px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+
+    border-radius: 20px ;
+    margin-bottom: 0px;
+  }
+
+  textarea{
+    resize: none;
+  }
+ 
+
+  .positive {
+    background-color: rgb(221, 221, 221) ;
+    padding: 30px ;    
+    margin-top: 60px;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+
+    border-radius: 20px ;
+    margin-bottom: 0px;
+  }
+
+  .pn{
+    font-size: 40px;
+  }
+  .uname{
+      font-size: 20px;
+      margin: 2px;
+      font-weight: bold;
+  }
+  
+  input[type=submit] {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 4px 30px;
+    cursor: pointer;
+  }
+ 
+  
+  
+  
+  
+  @media only screen and (max-width: 500px) {
+  
+    .heading {
+        margin-left: 0px;
+        float: left;       
+        background-color: rgb(0, 0, 0) ;
+        padding: 5px ;            
+        margin-top: 5px;
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        width: 100%;
+           
+      }
+  
+    fieldset{
+    width: 250px;
+    border:2px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+       
+  
+    }
+   
+    textarea{
+        resize: none;
+    }
+    .positive {
+        background-color: #cfc ;
+        padding: 2px ;
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 8px ;
+        
+      }
+      .pn{
+        font-size: 20px;
+      }
+      .uname{
+          font-size: 18px;
+          margin: 1px;
+          font-weight: bold;
+      }
+      input[type=submit] {
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        margin: 4px 30px;
+        cursor: pointer;
+      }
+  
+  }

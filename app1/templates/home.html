@@ -1,0 +1,131 @@
+
+<!-- backup code -->
+
+
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Home Page</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">
+</head>
+<body>
+
+
+  <div class="heading">Emotion classification on text dataset</div><br><br><br>
+
+
+  <div class="proj">
+<h4>Group members-</h4>
+<table align="center" border="1px solid black">
+    <tr>
+        <td><b>Roll no</b></td>
+        <td><b>Name</b></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>BECOB201</td>
+        <td>Prajakta Bhosale</td>
+    </tr>
+    <tr>
+        <td>BECOB262</td>
+        <td>Chinmayee Taralkar</td>
+    </tr>
+    <tr>
+        <td>BECOB266</td>
+        <td>Neha Thipse</td>
+    </tr>
+    
+</table>
+<h4>About Dataset-</h4>
+<table align="center" border="1px solid black">
+<tr>
+    <td>Dataset used</td>
+    <td>https://www.kaggle.com/praveengovi/emotions-dataset-for-nlp</td>
+</tr>
+<tr>
+    <td>Number of Classes</td>
+    <td>6</td>
+</tr>
+<tr>
+    <td>Names of classes</td>
+    <td>Sadness, Love, Anger, Fear, Joy, Surprise</td>
+</tr>
+</table>
+<h4>Classification models tried with accuracies-</h4>
+<table align="center" border="1px solid black">
+
+
+<tr>
+    <td>SVM</td>
+    <td>70.21%</td>
+</tr>
+<tr>
+    <td>Logistic Regression</td>
+    <td>68.84%</td>
+</tr>
+<tr>
+    <td>Naive Bayes</td>
+    <td>62.67%</td>
+</tr>
+<tr>
+    <td>Random Forest</td>
+    <td>60.28%</td>
+</tr>
+
+
+
+</table>
+
+
+
+  </div>
+
+<center><fieldset>
+ <form action="" method="POST">
+{% csrf_token %}
+<h3>Try out models-</h3>
+Enter text:<br><br>
+<textarea rows = "3" cols = "35" name = "review"  required="required"></textarea><br><br>
+<div class="btn"><input type="submit" value=" Submit " name="submit"></div>
+     
+     
+</form>
+</fieldset></center>
+
+
+
+<br>
+<br>
+
+{% if h %}
+<div class="positive">Text={{text}} <br> 
+    <table align="center" border="1px solid black">
+
+
+        <tr>
+            <td>SVM</td>
+            <td>{{op_svm}}</td>
+        </tr>
+        <tr>
+            <td>Logistic Regression</td>
+            <td>{{op_lr}}</td>
+        </tr>
+        <tr>
+            <td>Random Forest</td>
+            <td>{{op_rf}}</td>
+        </tr>
+      
+        
+        <tr>
+            <td>Naive Bayes</td>
+            <td>{{op_naive}}</td>
+        </tr>
+    </table>
+
+
+</div>
+
+{% endif %}
+</body>
+</html>   
